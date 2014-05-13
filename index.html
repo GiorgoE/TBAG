@@ -2,26 +2,35 @@
 <html>
 <head>
 	<title>Text Based Adventure Game</title>
+	
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    
+    <!--
+    <script>
+    $(document).ready(function(){
+    //$("#mask").click(function(){
+    $("#statementdiv").fadeIn(800);
+    //});
+    });
+    </script>
+	-->
+    
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-	<button id="BUTTON1">Buttonnn</button>
-	<button id="clear">Clear</button>
-	<div id="results"></div>
-	
-	
-<script src="js/zepto.js"></script>
-<script src="js/silly.js"></script>
+<body id="body" onLoad="funcIntro();">
 
-<script>
-$('#BUTTON1').click(function(){
-	BUTTON1.DoIt($('#results'));
-});
+<div id="mask" onclick="fadeitoutandin();">    
+<div id="statementdiv" style="display:none;">
+	<h4 id="Statement"></h4>
+	
 
-$('#clear').click(function(){
-	$('#results').html('');
-});
-</script>
+    
+	<p id="Button1" onclick = "funcS2()" ></p>
+	<p id="Button2" onclick = "funcS3()" ></p>
+</div>
+</div>
 	
 </body>
 </html>

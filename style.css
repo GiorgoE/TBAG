@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+	background-color: #000;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#mask {
+	width:100%;
+	min-width:320px;
+	min-height:1000px;
+	height:auto;
+	background-color:#151515;
+}
+
+#body #mask #statementdiv {
+	width:100%;
+	min-width:320px;
+	min-height:1000px;
+	height:auto;
+	text-align:center;
+}
+
